@@ -1,0 +1,6 @@
+<% @users.each do |use| %>
+<p><%= use.uid %>
+<%= link_to '削除', "/users/#{use.id}", method: :delete %>
+</p>
+<% end %>
+<%=link_to '戻る','/'%>
